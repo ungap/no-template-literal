@@ -1,5 +1,5 @@
 {
-  "name": "@ungap/template-literal",
+  "name": "@ungap/no-template-literal",
   "version": "0.0.1",
   "description": "A feature detected fix for non unique template literals",
   "main": "cjs/index.js",
