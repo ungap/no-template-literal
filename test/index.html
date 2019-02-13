@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ungap Template Literal</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+  <![endif]-->
+  <script src="global.js"></script>
+  <script type="module">
+  import TL from '../esm/index.js';
+  window.TL = TL;
+  </script>
+  <script>
+  this.onload = function () {
+    if (!this.TL)
+      loadScript('../min.js', function () {
+        loadTest(templateLiteral, 'Template Literal!');
+      });
+    else {
+      loadTest(TL, 'Template Literal!');
+    }
+  };
+  </script>
+</head>
+</html>

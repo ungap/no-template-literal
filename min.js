@@ -1,0 +1,1 @@
+function templateLiteral(t){return t}
